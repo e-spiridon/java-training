@@ -2,15 +2,16 @@ public class Brat extends Mecanism
 {
     private int pozitie = 0;
 
-    public Brat(int final pozitie) {this.pozitie = pozitie;}
-    public Brat(String final tip, int final pozitie) {this.tip = tip; this.pozitie = pozitie;}
+    public Brat(String tip) {super(tip);}
+    public Brat(int pozitie) {super("Brat"); this.pozitie = pozitie;}
+    public Brat(String tip, int pozitie) {super(tip); this.pozitie = pozitie;}
 
-    void afiseazaPozitie()
+    public void afiseazaPozitie()
     {
         System.out.println("Pozitie brat: " + this.pozitie);
     }
 
-    void mutaBrat(int final pozitie) {this.pozitie = pozitie;}
+    public void mutaBrat(int pozitie) {this.pozitie = pozitie;}
 
-    void seteazaTip(String final tip) {this.tip = tip;}
+    public void seteazaTip(String tip) {this.tip = tip;}
 }
