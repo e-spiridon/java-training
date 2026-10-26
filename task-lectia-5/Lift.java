@@ -11,7 +11,9 @@ public class Lift extends Mecanism
         System.out.println("Pozitie lift: " + this.pozitie);
     }
 
-    public void mutaLift(int pozitie) {this.pozitie = pozitie;}
+    public void mutaLift(int pozitie) 
+    {this.pozitie = pozitie;}
 
-    public void seteazaTip(String tip) {this.tip = tip;}
+    public void seteazaTip(String tip) 
+    {this.tip = tip;}
 }
